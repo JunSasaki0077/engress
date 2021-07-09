@@ -1,0 +1,8 @@
+@import "../setting/config";
+@mixin btn($bgColor: $colorOrange) {
+  height: 60px;
+  width: 260px;
+  background-color: $bgColor;
+  border-radius: 31px;
+  color: #fff;
+}

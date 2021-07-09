@@ -3,8 +3,8 @@
   width: 100vw;
   height: 80px;
   position: fixed;
-  z-index: 10;
-
+  background-color: #fff;
+  top: 0;
   &__inner {
     padding-right: 10px;
     padding-left: 15px;
@@ -21,7 +21,6 @@
     display: flex;
   }
 
-  }
   &__tel {
     display: flex;
   }

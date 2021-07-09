@@ -7,6 +7,7 @@ body {
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  padding-top: 80px;
 }
 
 *,
@@ -487,10 +488,11 @@ template {
 }
 
 .header {
+  background-color: #fff;
   height: 80px;
   position: fixed;
+  top: 0;
   width: 100vw;
-  z-index: 10;
 }
 .header__inner {
   align-items: center;
@@ -506,15 +508,6 @@ template {
 }
 .header__right-box {
   display: flex;
-}
-.header__nav-list {
-  display: flex;
-}
-.header__nav-link {
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 29px;
-  padding-left: 28px;
 }
 .header__tel {
   display: flex;
@@ -564,5 +557,52 @@ template {
   font-weight: bold;
   line-height: 29px;
   padding-left: 28px;
+}
+
+.fv {
+  background-image: url(../images/top/fv.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 476px;
+  position: relative;
+  text-align: center;
+}
+.fv__inner {
+  -webkit-transform: translate(-50%, -50%);
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.fv__title {
+  color: #fff;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 65px;
+  margin-bottom: 28px;
+}
+.fv__text {
+  color: #fff;
+  font-size: 18px;
+  line-height: 31px;
+  margin-bottom: 51px;
+}
+.fv__btn {
+  background-color: #f5a623;
+  border-radius: 31px;
+  color: #fff;
+  height: 60px;
+  margin-bottom: 22px;
+  width: 260px;
+}
+.fv__link {
+  display: block;
+  font-weight: bold;
+  line-height: 29px;
+}
+.fv__contact {
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  display: inline-block;
 }
 /*# sourceMappingURL=sourcemaps/style.css.map */

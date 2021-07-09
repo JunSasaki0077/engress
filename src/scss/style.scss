@@ -1,7 +1,10 @@
 @import "./base/base";
 @import "./base/reset";
 
+@import "./mixin/btn";
+
 @import "./module/header";
 @import "./module/gnav";
 
+@import "./page/top/fv";
 @import "./setting/_config.scss";

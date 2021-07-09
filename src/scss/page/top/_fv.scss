@@ -1,0 +1,44 @@
+.fv {
+  background-image: url(../images/top/fv.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 476px;
+  position: relative;
+  text-align: center;
+
+  &__inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__title {
+    font-size: 48px;
+    line-height: 65px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 28px;
+  }
+  &__text {
+    font-size: 18px;
+    line-height: 31px;
+    color: #fff;
+    margin-bottom: 51px;
+  }
+  &__btn {
+    @include btn;
+    margin-bottom: 22px;
+  }
+
+  &__link {
+    display: block;
+    line-height: 29px;
+    font-weight: bold;
+  }
+
+  &__contact {
+    display: inline-block;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+}
