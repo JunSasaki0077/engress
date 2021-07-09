@@ -1,0 +1,11 @@
+.gnav {
+  &__list {
+    display: flex;
+  }
+  &__link {
+    padding-left: 28px;
+    font-size: 16px;
+    line-height: 29px;
+    font-weight: bold;
+  }
+}

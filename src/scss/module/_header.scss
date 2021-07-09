@@ -1,0 +1,64 @@
+@import "../setting/config";
+.header {
+  width: 100vw;
+  height: 80px;
+  position: fixed;
+  z-index: 10;
+
+  &__inner {
+    padding-right: 10px;
+    padding-left: 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__left-box {
+    display: flex;
+    align-items: center;
+  }
+  &__right-box {
+    display: flex;
+  }
+
+  }
+  &__tel {
+    display: flex;
+  }
+  &__text-box {
+    padding-right: 23px;
+  }
+  &__text01 {
+    text-align: right;
+    padding-bottom: 10px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  &__text02 {
+    padding-left: 5px;
+    font-weight: bold;
+  }
+  &__btn01 {
+    width: 142px;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: $colorOrange;
+    &-link {
+      font-weight: bold;
+    }
+  }
+  &__btn02 {
+    width: 142px;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    background-color: $colorBlue;
+    &-link {
+      font-weight: bold;
+    }
+  }
+}
