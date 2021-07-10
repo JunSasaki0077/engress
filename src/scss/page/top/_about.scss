@@ -1,0 +1,57 @@
+@import "../../setting/config";
+.about {
+  background-color: $colorBlue;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  &__inner {
+    padding: 63px 190px 54px 190px;
+  }
+  &__title {
+    font-size: 36px;
+    line-height: 50px;
+    padding-bottom: 65px;
+  }
+  &__text-box {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 83px;
+  }
+  &__text {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 39px;
+    padding-right: 56px;
+    &:nth-child(2) {
+      padding-right: 30px;
+    }
+    &:nth-child(3) {
+      padding-right: 0;
+    }
+  }
+  &__sub {
+    &-textBox {
+      width: 100%;
+      background-color: #fff;
+      color: $colorBlue;
+      padding-top: 32px;
+      padding-bottom: 36px;
+      outline: 5px solid $colorBlue;
+      outline-offset: -16px;
+      box-sizing: border-box;
+    }
+
+    &-title {
+      font-size: 36px;
+      line-height: 50px;
+      padding-bottom: 25px;
+    }
+    &-text {
+      font-size: 18px;
+      line-height: 31px;
+    }
+  }
+  &__under-line {
+    background: linear-gradient(transparent 70%, $colorOrange 0%);
+  }
+}

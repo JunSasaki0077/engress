@@ -1,5 +1,5 @@
-@import "./base/base";
 @import "./base/reset";
+@import "./base/base";
 
 @import "./mixin/btn";
 
@@ -7,4 +7,6 @@
 @import "./module/gnav";
 
 @import "./page/top/fv";
+@import "./page/top/about";
+
 @import "./setting/_config.scss";

@@ -1,27 +1,4 @@
 @charset "UTF-8";
-body {
-  -webkit-font-feature-settings: "palt";
-  font-feature-settings: "palt";
-  -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
-  padding-top: 80px;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-img {
-  height: auto;
-  max-width: 100%;
-  vertical-align: bottom;
-}
-
 /*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -487,6 +464,38 @@ template {
   display: none;
 }
 
+body {
+  -webkit-font-feature-settings: "palt";
+  font-feature-settings: "palt";
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  padding-top: 80px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
 .header {
   background-color: #fff;
   height: 80px;
@@ -604,5 +613,59 @@ template {
   border-bottom: 1px solid #fff;
   color: #fff;
   display: inline-block;
+}
+
+.about {
+  background-color: #1b224c;
+  color: #fff;
+  position: relative;
+  text-align: center;
+}
+.about__inner {
+  padding: 63px 190px 54px 190px;
+}
+.about__title {
+  font-size: 36px;
+  line-height: 50px;
+  padding-bottom: 65px;
+}
+.about__text-box {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 83px;
+}
+.about__text {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 39px;
+  padding-right: 56px;
+}
+.about__text:nth-child(2) {
+  padding-right: 30px;
+}
+.about__text:nth-child(3) {
+  padding-right: 0;
+}
+.about__sub-textBox {
+  background-color: #fff;
+  box-sizing: border-box;
+  color: #1b224c;
+  outline: 5px solid #1b224c;
+  outline-offset: -16px;
+  padding-bottom: 36px;
+  padding-top: 32px;
+  width: 100%;
+}
+.about__sub-title {
+  font-size: 36px;
+  line-height: 50px;
+  padding-bottom: 25px;
+}
+.about__sub-text {
+  font-size: 18px;
+  line-height: 31px;
+}
+.about__under-line {
+  background: linear-gradient(transparent 70%, #f5a623 0%);
 }
 /*# sourceMappingURL=sourcemaps/style.css.map */
