@@ -1,12 +1,15 @@
 .fv {
-  background-image: url(../images/top/fv.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 476px;
+  width: 100%;
+
   position: relative;
   text-align: center;
+  &__img {
+    width: 100vw;
+    height: calc(100vw * 0.372);
+    max-height: 1000px;
+  }
 
-  &__inner {
+  &__text-box {
     position: absolute;
     top: 50%;
     left: 50%;

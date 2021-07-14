@@ -569,14 +569,16 @@ img {
 }
 
 .fv {
-  background-image: url(../images/top/fv.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 476px;
   position: relative;
   text-align: center;
+  width: 100%;
 }
-.fv__inner {
+.fv__img {
+  height: calc(100vw * 0.372);
+  max-height: 1000px;
+  width: 100vw;
+}
+.fv__text-box {
   -webkit-transform: translate(-50%, -50%);
   left: 50%;
   position: absolute;
@@ -622,7 +624,9 @@ img {
   text-align: center;
 }
 .about__inner {
-  padding: 63px 190px 54px 190px;
+  margin: 0 auto;
+  padding-bottom: 54px;
+  padding-top: 63px;
 }
 .about__title {
   font-size: 36px;
@@ -650,6 +654,8 @@ img {
   background-color: #fff;
   box-sizing: border-box;
   color: #1b224c;
+  margin: 0 auto;
+  max-width: 900px;
   outline: 5px solid #1b224c;
   outline-offset: -16px;
   padding-bottom: 36px;
@@ -675,10 +681,12 @@ img {
   padding-top: 59px;
   width: 70.313%;
 }
-.media__title {
+.media__head {
+  padding-bottom: 59px;
+}
+.media__head-title {
   font-size: 36px;
   line-height: 50px;
-  padding-bottom: 59px;
   text-align: center;
 }
 .media__text-box {
@@ -690,24 +698,26 @@ img {
 .media__body {
   align-items: center;
   display: flex;
+  margin: 0 auto;
+  max-width: 900px;
   padding-bottom: 60px;
 }
 .media__body:last-child {
-  padding-bottom: 0;
-}
-.media__body-title {
-  font-size: 26px;
-  line-height: 39px;
-  padding-bottom: 39px;
-}
-.media__body-text {
-  line-height: 27px;
+  padding-bottom: 93px;
 }
 .media__body--reverse {
   flex-direction: row-reverse;
 }
 .media__body--reverse .media__text-box {
   margin-left: 5.736%;
+}
+.media__title {
+  font-size: 26px;
+  line-height: 39px;
+  padding-bottom: 39px;
+}
+.media__text {
+  line-height: 27px;
 }
 .media__labels {
   display: inline-flex;
@@ -734,5 +744,133 @@ img {
 .media__img {
   height: 240px;
   width: 350px;
+}
+.media__price {
+  background-image: url("../images/top/price.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  margin: 0 auto;
+  max-width: 900px;
+  padding-bottom: 53px;
+  padding-top: 61px;
+  text-align: center;
+}
+.media__price-title {
+  font-size: 26px;
+  line-height: 39px;
+  padding-bottom: 27px;
+}
+.media__price-btn {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 31px;
+  color: #fff;
+  height: 60px;
+  width: 260px;
+}
+
+.card {
+  background-color: #1b224c;
+  color: #fff;
+  padding-bottom: 60px;
+  padding-top: 58px;
+  width: 100%;
+}
+.card__head-title {
+  font-size: 36px;
+  line-height: 50px;
+  padding-bottom: 137px;
+  text-align: center;
+}
+.card__body {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 900px;
+  width: 70.313%;
+}
+.card__title {
+  font-size: 16px;
+  line-height: 29px;
+  padding-bottom: 9px;
+}
+.card__name {
+  display: flex;
+  padding-bottom: 10px;
+}
+.card__img-wrapper {
+  background-color: #fff;
+  margin-bottom: 16px;
+  padding-top: 30px;
+  text-align: center;
+}
+.card__text01 {
+  background-color: #fff;
+  color: #1b224c;
+  margin-right: 8px;
+  padding: 8px 42px 8px 10px;
+}
+.card__text02 {
+  background-color: #fff;
+  color: #1b224c;
+  padding: 8px 14px;
+  padding-right: 47px;
+}
+.card__text03 {
+  background-color: #fff;
+  color: #1b224c;
+  padding: 8px 14px;
+}
+
+.flow {
+  margin: 0 auto;
+  max-width: 900px;
+  padding-bottom: 75px;
+  padding-top: 58px;
+  width: 70.313%;
+}
+.flow__head {
+  padding-bottom: 53px;
+}
+.flow__head-title {
+  font-size: 36px;
+  line-height: 50px;
+  text-align: center;
+}
+.flow__items {
+  width: 100%;
+}
+.flow__item {
+  align-items: center;
+  background-color: #f8f8f8;
+  display: flex;
+  height: 64px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.flow__num {
+  background-color: #f5a623;
+  color: #fff;
+  font-weight: bold;
+  padding: 24px 23px;
+  vertical-align: middle;
+  width: 64px;
+}
+.flow__title {
+  align-items: center;
+  border-right: 1px solid #c3c3c3;
+  color: #1b224c;
+  font-size: 18px;
+  height: 30px;
+  padding-left: 21px;
+  padding-top: 5px;
+  width: 32.5%;
+}
+.flow__text {
+  color: #1b224c;
+  padding: 23px 0 23px 53.5px;
+  width: 100%;
 }
 /*# sourceMappingURL=sourcemaps/style.css.map */

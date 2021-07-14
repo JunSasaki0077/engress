@@ -1,11 +1,12 @@
-@import "../../setting/config";
 .about {
   background-color: $colorBlue;
   color: #fff;
   text-align: center;
   position: relative;
   &__inner {
-    padding: 63px 190px 54px 190px;
+    padding-top: 63px;
+    padding-bottom: 54px;
+    margin: 0 auto;
   }
   &__title {
     font-size: 36px;
@@ -31,6 +32,8 @@
   }
   &__sub {
     &-textBox {
+      margin: 0 auto;
+      max-width: 900px;
       width: 100%;
       background-color: #fff;
       color: $colorBlue;

@@ -6,9 +6,11 @@ block content
   include ./includes/_header.pug
 
   section.fv
-    .fv__inner
+    .fv__img-wrapper
+      img.fv__img(src="../images/top/fv.png", alt="ファーストビュー")
+    .fv__text-box
       h1.fv__title TOEFL対策はEngress
-      p.fv__text 日本人へのTOEFL指導豊かな講師陣のbr//>コーチング型TOEFLスクール
+      p.fv__text 日本人へのTOEFL指導豊かな講師陣の<br/>コーチング型TOEFLスクール
       button.fv__btn
         a.fv__link(href="#") 資料請求
       div
@@ -26,14 +28,15 @@ block content
         p.about__sub-text 完全オーダーメイドで、１人１人の悩みに合わせた最適な指導で<br/>TOEFLの苦手分野を克服します。
 
   section.media
-    h2.media__title TOEFL対策に特化したEngress３つの強み
+    .media__head
+      h2.media__head-title TOEFL対策に特化したEngress３つの強み
     .media__body
       .media__text-box
         ul.media__labels
           li.media__label
             span.label 特徴 １
-        h3.media__body-title TOEFLに最適化された<br/>無駄のないカリキュラム
-        p.media__body-text TOEFLではビジネス英語には登場しない数多くの学術的内容が出題さ<br/>れます。そのため、ベースとなる知識も必要にます。Engressで<br/>は過去1000題を分析し、最適なカリキュラムを組んでいます。
+        h3.media__title TOEFLに最適化された<br/>無駄のないカリキュラム
+        p.media__text TOEFLではビジネス英語には登場しない数多くの学術的内容が出題さ<br/>れます。そのため、ベースとなる知識も必要にます。Engressで<br/>は過去1000題を分析し、最適なカリキュラムを組んでいます。
       figure.media__img-wrapper
         img.media__img(src="./images/top/feature01.png", alt="特徴１")
     .media__body.media__body--reverse
@@ -41,8 +44,8 @@ block content
         ul.media__labels
           li.media__label
             span.label 特徴 ２
-        h3.media__body-title 日本人指導歴１０年以上の<br/>経験豊富な講師陣
-        p.media__body-text Engressの講師陣は、もともと日本人向けにTOEFLを教えていた人が<br/>大多数です。また全メンバーがTESOL(英語教授法)を取得しており、<br/>知識と経験を兼ね備えている教育のプロフェッショナルです。
+        h3.media__title 日本人指導歴１０年以上の<br/>経験豊富な講師陣
+        p.media__text Engressの講師陣は、もともと日本人向けにTOEFLを教えていた人が<br/>大多数です。また全メンバーがTESOL(英語教授法)を取得しており、<br/>知識と経験を兼ね備えている教育のプロフェッショナルです。
       figure.media__img-wrapper
         img.media__img(src="./images/top/feature02.png", alt="特徴２")
     .media__body
@@ -50,7 +53,61 @@ block content
         ul.media__labels
           li.media__label
             span.label 特徴 3
-        h3.media__body-title 平均３ヶ月でTOEFL iBT20点アップ
-        p.media__body-text  Engressは高校生からサラリーマンまで様々な年齢層の方々が通われ<br/>ていますが、完全オーダーメイドのカリキュラムで柔軟に対応してい<br/>るため、平均３ヶ月でTOEFLスコアを２０点アップさせています。
+        h3.media__title 平均３ヶ月でTOEFL iBT20点アップ
+        p.media__text  Engressは高校生からサラリーマンまで様々な年齢層の方々が通われ<br/>ていますが、完全オーダーメイドのカリキュラムで柔軟に対応してい<br/>るため、平均３ヶ月でTOEFLスコアを２０点アップさせています。
       figure.media__img-wrapper
         img.media__img(src="./images/top/feature03.png", alt="特徴３")
+    .media__price
+      h3.media__price-title Engressの料金プランはこちら
+      button.media__price-btn
+        a.media__price-link(href="#") 料金を見てみる
+
+  section.card
+    .card__head
+      h2.card__head-title TOEFL成功事例
+    .card__body
+      .card__item
+        h3.card__title TOEFL iBT 100点を突破してコロンビ<br/>ア大学大学院に進学できました！
+        figure.card__img-wrapper
+          img.card__img(src="../images/top/model01.png", alt="モデル１")
+        .card__name
+          p.card__text01 会社員
+          p.card__text02 T.Fujiyamaさん
+        p.card__text03 3ヶ月でTOEFL80→108点
+      .card__item
+        h3.card__title 半年でTOEFL 40点→100点を達成！コ<br/>ロンビア大学大学院に合格
+        figure.card__img-wrapper
+          img.card__img(src="../images/top/model02.png", alt="モデル２")
+        .card__name
+          p.card__text01 大学生
+          p.card__text02 Y.Takiyamaさん
+        p.card__text03 6ヶ月でTOEFL40→100点
+      .card__item
+        h3.card__title 早稲田大学 国際教養学部AO入試合<br/>格！TOEFL iBT109点
+        figure.card__img-wrapper
+          img.card__img(src="../images/top/model03.png", alt="モデル３")
+        .card__name
+          p.card__text01 高校生
+          p.card__text02 M.Yamadaさん
+        p.card__text03 5ヶ月でTOEFL68→109点
+
+  section.flow
+    .flow__head
+      h2.flow__head-title ご利用の流れ
+    ul.flow__items
+        li.flow__item
+          p.flow__num  01
+          h3.flow__title お問い合わせ
+          p.flow__text まずはフォームまたはお電話からお申し込みください。
+        li.flow__item
+          p.flow__num  02
+          h3.flow__title ヒアリング
+          p.flow__text 現在の学習状況やTOEFLスコア、目情のスコアをお聞きします。
+        li.flow__item
+          p.flow__num  03
+          h3.flow__title 学習プランの提供
+          p.flow__text 目標達成のために最適な学習プランをご提案致します。
+        li.flow__item
+          p.flow__num  04
+          h3.flow__title ご入会
+          p.flow__text お申し込み完了後、レッスンがスタートします。
