@@ -1,9 +1,9 @@
-extends ./includes/_layout.pug
+extends ./includes/_layout
 block titles
   - var title = 'Engress'
 block content
 
-  include ./includes/_header.pug
+  include ./includes/_header
 
   section.fv
     .fv__img-wrapper
@@ -111,3 +111,64 @@ block content
           p.flow__num  04
           h3.flow__title ご入会
           p.flow__text お申し込み完了後、レッスンがスタートします。
+
+  section.qanda
+    .qanda__head
+      h2.qanda__head-title よくある質問
+    dl.qanda__menu
+      dt.qanda__title Engressはサラリーマンでも学習を続けられるでしょうか？<span class="qanda__btn">開く</span>
+      dd.qanda__text Engressは各個人に最適な学習プランをご提供しております。サラリーマンの方でも継続できます。
+      dt.qanda__title 教材はオリジナルのものを使用しているのでしょうか？<span class="qanda__btn">開く</span>
+      dd.qanda__text Engressは各個人に最適な学習プランをご提供しております。サラリーマンの方でも継続できます。
+      dt.qanda__title 講師に日本人はいますか？<span class="qanda__btn">開く</span>
+      dd.qanda__text Engressは各個人に最適な学習プランをご提供しております。サラリーマンの方でも継続できます。
+      dt.qanda__title TOEFL以外の海外大学合格サポートもしてもらえるのでしょうか？<span class="qanda__btn">開く</span>
+      dd.qanda__text Engressは各個人に最適な学習プランをご提供しております。サラリーマンの方でも継続できます。
+
+  section.blog-news
+    .blog-news__box
+      h2.blog-news__blog-title ブログ
+      .blog-news__items
+        .blog-news__badge
+          span.blog-news__badge-text カテゴリー
+        .blog-news__item
+          figure.blog-news__img-wrapper
+            img.blog-news__img(src="../images/top/sample01.png", alt="ブログ画像01")
+          .blog-news__blog-box
+            a.blog-news__text-title(href="#") Engress説明会in大阪の模様をお伝<br/>えします
+            p.blog-news__date01 2020-12-27
+        .blog-news__badge
+          span.blog-news__badge-text カテゴリー
+        .blog-news__item
+          figure.blog-news__img-wrapper
+            img.blog-news__img(src="../images/top/sample02.png", alt="ブログ画像02")
+          .blog-news__blog-box
+            a.blog-news__text-title(href="#") Engressモクモク会でみんなで<br/>TOEFL学習しませんか？
+            p.blog-news__date01 2020-12-01
+        .blog-news__badge
+          span.blog-news__badge-text カテゴリー
+        .blog-news__item
+          figure.blog-news__img-wrapper
+            img.blog-news__img(src="../images/top/sample03.png", alt="ブログ画像03")
+          .blog-news__blog-box
+            a.blog-news__text-title(href="#") TOEFL学習にはコーチング学習が<br/>最強である話。
+            p.blog-news__date01 2020-11-20
+    .blog-news__box
+      h2.blog-news__news-title お知らせ
+      .blog-news__news-box
+          p.blog-news__date02 2020-12-01
+          a.blog-news__link(href="#") 2021年のスケジュールについて
+      .blog-news__news-box
+          p.blog-news__date02 2020-11-02
+          a.blog-news__link(href="#") １１月休校日のお知らせ
+      .blog-news__news-box
+          p.blog-news__date02 2020-10-01
+          a.blog-news__link(href="#") １０月休校日のお知らせ
+
+
+
+
+
+
+
+  include ./includes/_footer.pug

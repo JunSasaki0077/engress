@@ -471,6 +471,7 @@ body {
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  color: #1b224c;
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
   padding-top: 80px;
 }
@@ -861,7 +862,6 @@ img {
 .flow__title {
   align-items: center;
   border-right: 1px solid #c3c3c3;
-  color: #1b224c;
   font-size: 18px;
   height: 30px;
   padding-left: 21px;
@@ -869,8 +869,144 @@ img {
   width: 32.5%;
 }
 .flow__text {
-  color: #1b224c;
   padding: 23px 0 23px 53.5px;
   width: 100%;
+}
+
+.qanda {
+  padding-bottom: 90.24px;
+}
+.qanda__head-title {
+  font-size: 36px;
+  line-height: 50px;
+  padding-bottom: 32.5px;
+  text-align: center;
+}
+.qanda__menu {
+  margin: 0 auto;
+  max-width: 900px;
+  width: 100%;
+}
+.qanda__menu:last-child {
+  border-bottom: 1px solid #1b224c;
+}
+.qanda__title {
+  border-top: 1px solid #1b224c;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: normal;
+  height: 60px;
+  line-height: 27px;
+  padding-top: 15px;
+  position: relative;
+}
+.qanda__text {
+  background-color: #f8f8f8;
+  display: none;
+  height: 60px;
+  line-height: 27px;
+  margin-bottom: 25.5px;
+  padding-left: 2.83%;
+  padding-top: 15px;
+}
+.qanda__btn {
+  -webkit-transform: translateY(-50%);
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  right: 20px;
+  text-indent: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+}
+.qanda__btn::before, .qanda__btn::after {
+  -webkit-transform: translate(-50%, -50%);
+  background-color: #1b224c;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s;
+  width: 50%;
+}
+.qanda__btn::before {
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+  transform: translate(-50%, -50%) rotate(90deg);
+  transition: 0.5s;
+}
+.qanda__btn.js-open:before {
+  -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.blog-news {
+  display: flex;
+  margin: 0 auto;
+  width: 70.313%;
+}
+.blog-news__blog-title {
+  font-size: 32px;
+  line-height: 54px;
+  margin-bottom: 30px;
+}
+.blog-news__news-title {
+  font-size: 32px;
+  line-height: 54px;
+  margin-bottom: 30px;
+  margin-left: 67px;
+}
+.blog-news__item {
+  display: flex;
+  margin-bottom: 31px;
+}
+.blog-news__badge {
+  position: relative;
+}
+.blog-news__badge::after {
+  border-style: solid;
+  border-width: 1.5rem 4.75rem 0 0;
+  content: "";
+  position: absolute;
+  z-index: 1;
+}
+.blog-news__badge-text {
+  color: #fff;
+  font-size: 12px;
+  left: 0.5rem;
+  position: absolute;
+  top: 0.25rem;
+  z-index: 2;
+}
+.blog-news__blog-box {
+  margin-left: 20px;
+  position: relative;
+}
+.blog-news__news-box {
+  height: 87px;
+  margin-bottom: 17px;
+  margin-left: 67px;
+}
+.blog-news__text-title {
+  font-weight: bold;
+  line-height: 27px;
+  text-decoration: underline;
+}
+.blog-news__date01 {
+  bottom: 0;
+  font-size: 12px;
+  position: absolute;
+}
+.blog-news__date02 {
+  font-size: 12px;
+  line-height: 20px;
+  padding-bottom: 16px;
+}
+.blog-news__link {
+  line-height: 27px;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=sourcemaps/style.css.map */

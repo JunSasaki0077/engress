@@ -1,0 +1,67 @@
+.qanda {
+  padding-bottom: 90.24px;
+  &__head-title {
+    font-size: 36px;
+    line-height: 50px;
+    text-align: center;
+
+    padding-bottom: 32.5px;
+  }
+  &__menu {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+    &:last-child {
+      border-bottom: 1px solid $colorBlue;
+    }
+  }
+  &__title {
+    cursor: pointer;
+    position: relative;
+    height: 60px;
+    font-size: 16px;
+    line-height: 27px;
+    padding-top: 15px;
+    font-weight: normal;
+    border-top: 1px solid $colorBlue;
+  }
+  &__text {
+    padding-top: 15px;
+    background-color: $colorGray;
+    height: 60px;
+    line-height: 27px;
+    display: none;
+    margin-bottom: 25.5px;
+    padding-left: 2.83%;
+  }
+  &__btn {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: block;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    &::before,
+    &::after {
+      display: block;
+      content: "";
+      background-color: $colorBlue;
+      position: absolute;
+      transition: all 0.4s;
+      width: 50%;
+      height: 2px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &::before {
+      transform: translate(-50%, -50%) rotate(90deg);
+      transition: 0.5s;
+    }
+    &.js-open:before {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+  }
+}
