@@ -1,0 +1,16 @@
+.fnav {
+  &__list {
+    display: flex;
+    padding-top: 14px;
+  }
+  &__item {
+    padding-right: 21.5px;
+    padding-left: 21.5px;
+    border-right: 1px solid $colorWhite;
+    font-weight: bold;
+    line-height: 27px;
+    &:last-child {
+      border-right: none;
+    }
+  }
+}

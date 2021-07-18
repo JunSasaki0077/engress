@@ -21,19 +21,19 @@
     display: flex;
   }
 
-  &__tel {
+  &__tel-box {
     display: flex;
   }
   &__text-box {
     padding-right: 23px;
   }
-  &__text01 {
+  &__time {
     text-align: right;
     padding-bottom: 10px;
     font-size: 12px;
     line-height: 20px;
   }
-  &__text02 {
+  &__tel {
     padding-left: 5px;
     font-weight: bold;
   }

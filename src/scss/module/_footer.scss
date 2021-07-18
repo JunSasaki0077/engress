@@ -1,0 +1,45 @@
+.footer {
+  color: $colorWhite;
+  background-color: $colorBlue;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 172px 68px 191px;
+  }
+
+  &__img {
+    background-color: $colorWhite;
+    padding: 15px 19px 12px 19px;
+    margin-bottom: 27px;
+    img {
+      height: 31px;
+      width: 159px;
+    }
+  }
+  &__tel-box {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 13px;
+  }
+  &__tel-logo {
+    margin-right: 7px;
+  }
+  &__tel {
+    font-weight: bold;
+  }
+  &__time {
+    text-align: right;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  &__copyright {
+    height: 36px;
+    &-text {
+      text-align: right;
+      padding: 12px 173px 12px 0;
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 20px;
+    }
+  }
+}
