@@ -1,0 +1,30 @@
+.breadcrumb {
+  height: 50px;
+  background-color: $colorGray;
+  padding-bottom: 58px;
+
+  &__list {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 11px;
+  }
+  &__item {
+    display: inline;
+    font-size: 12px;
+    line-height: 20px;
+    &::after {
+      content: ">";
+      padding: 0 0.2em;
+      color: #555;
+    }
+    &:last-child::after {
+      content: "";
+    }
+    a {
+      text-decoration: none;
+      color: #000;
+      line-height: 32px;
+      text-decoration: underline;
+    }
+  }
+}

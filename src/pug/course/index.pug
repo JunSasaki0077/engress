@@ -1,0 +1,73 @@
+extends ../includes/_layout
+block titles
+  - let title = 'Engress'
+
+
+
+  include ../includes/_header
+
+  section.top
+    h1.top__title コース・料金
+
+  include ../includes/_breadcrumb
+
+  .content
+    section.system
+        h2.system__title 料金体系
+        .system__box
+          p.system__text-box 入会金 39,800円
+          p.system__puls
+          p.system__text-box 月額費用
+        p.system__text Engressのカリキュラムは完全オーダーメイドのため、カリキュラム内のサポート内容によって料金が変動します。おすすめ<br/>
+          | のスタンダードプランでは、進学先に合わせたサポートまで包括的に行います。
+
+    section.price
+      h2.price__title 料金表
+      ul.price__boxes
+        li.price-boxes__item.price-box
+          .price-box__header
+            p.price-box_title 基礎プラン
+          .price-box__body
+            p.price-box__price 59,000円~
+            p.price-box__lead *月額（税抜き価格）
+            ul.price-box__feature
+              li.price-box__feature-text カリキュラム作成
+              li.price-box__feature-text TOEFL学習サポート
+              li.price-box__feature-text 週一回のビデオMTG
+        li.price-boxes__item.price-box
+          .price-box__header
+            p.price-box_title 演習プラン
+          .price-box__body
+            p.price-box__price 75,000円~
+            p.price-box__lead *月額（税抜き価格）
+            ul.price-box__feature
+              li.price-box__feature-text カリキュラム作成
+              li.price-box__feature-text TOEFL学習サポート
+              li.price-box__feature-text 週一回のビデオMTG
+              li.price-box__feature-text 月二回の模範（解説<br/>
+                | 付き）
+        li.price-boxes__item.price-box
+          .price-box__header-orange
+            p.price-box__title おすすめ
+              span 志望校対策プラン
+          .price-box__body
+            p.price-box__price-orange 95,000円~
+            p.price-box__lead *月額（税抜き価格）
+            ul.price-box__feature
+              li.price-box__feature-text カリキュラム作成
+              li.price-box__feature-text TOEFL学習サポート
+              li.price-box__feature-text 週一回のビデオMTG
+              li.price-box__feature-text 月二回の模範（解説<br/>
+                | 付き）
+              li.price-box__feature-text 週一の英語面接対策
+        li.price-boxes__item.price-box
+          .price-box__header
+            p.price-box_title フレックスプラン
+          .price-box__body
+            p.price-box__price 60,000円~
+            p.price-box__lead *月額（税抜き価格）
+            ul.price-box__feature
+              li.price-box__feature-lead *別途ご雑談ください
+
+  include ../includes/_contact
+  include ../includes/_footer

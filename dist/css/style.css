@@ -569,6 +569,12 @@ img {
   padding-left: 28px;
 }
 
+.content {
+  margin: 0 auto;
+  max-width: 900px;
+  padding-top: 58px;
+}
+
 .footer {
   background-color: #1b224c;
   color: #ffffff;
@@ -612,6 +618,22 @@ img {
   line-height: 20px;
   padding: 12px 173px 12px 0;
   text-align: right;
+}
+
+.top {
+  background-image: url("../images/course/plan.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 221px;
+  width: 100%;
+}
+.top__title {
+  color: #ffffff;
+  font-size: 32px;
+  letter-spacing: 0.25rem;
+  line-height: 54px;
+  padding: 5rem;
+  text-align: center;
 }
 
 .fnav__list {
@@ -676,6 +698,36 @@ img {
 }
 .contact__time {
   line-height: 27px;
+}
+
+.breadcrumb {
+  background-color: #f8f8f8;
+  height: 50px;
+  padding-bottom: 58px;
+}
+.breadcrumb__list {
+  margin: 0 auto;
+  max-width: 900px;
+  padding-top: 11px;
+}
+.breadcrumb__item {
+  display: inline;
+  font-size: 12px;
+  line-height: 20px;
+}
+.breadcrumb__item::after {
+  color: #555;
+  content: ">";
+  padding: 0 0.2em;
+}
+.breadcrumb__item:last-child::after {
+  content: "";
+}
+.breadcrumb__item a {
+  color: #000;
+  line-height: 32px;
+  text-decoration: none;
+  text-decoration: underline;
 }
 
 .fv {
@@ -1118,5 +1170,150 @@ img {
 .blog-news__link {
   line-height: 27px;
   text-decoration: underline;
+}
+
+.system__title {
+  font-size: 32px;
+  line-height: 54px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+.system__box {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 79px;
+}
+.system__text-box {
+  background-color: #1b224c;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: bold;
+  height: 90px;
+  line-height: 35px;
+  padding-top: 29px;
+  text-align: center;
+  width: 280px;
+}
+.system__puls {
+  background: currentColor;
+  border-radius: 0.1em;
+  display: inline-block;
+  height: 0.1em;
+  line-height: 1;
+  margin-left: 35px;
+  margin-right: 35px;
+  position: relative;
+  top: 40px;
+  vertical-align: middle;
+  width: 2em;
+}
+.system__puls::before {
+  -webkit-transform: rotate(90deg);
+  background: inherit;
+  border-radius: inherit;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: rotate(90deg);
+  width: 100%;
+}
+.system__text {
+  font-size: 1.1rem;
+  line-height: 27px;
+  padding-bottom: 90px;
+}
+
+.price {
+  padding-bottom: 62px;
+}
+.price__title {
+  font-size: 32px;
+  line-height: 54px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+.price__boxes {
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+}
+.price-boxes__item {
+  flex: 1;
+  margin-right: 7px;
+}
+.price-boxes__item:last-child {
+  margin-right: 0;
+}
+.price-box {
+  text-align: center;
+}
+.price-box__header {
+  background-color: #1b224c;
+  color: #ffffff;
+  margin-top: 43px;
+  padding: 21px;
+  text-align: center;
+}
+.price-box__header-orange {
+  background-color: #f5a623;
+  color: #ffffff;
+  padding: 21px;
+  text-align: center;
+}
+.price-box__title {
+  font-size: 1.125rem;
+  line-height: 35px;
+}
+.price-box__title span {
+  display: block;
+  line-height: 27px;
+}
+.price-box__price {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 40px;
+  padding-bottom: 14px;
+}
+.price-box__price-orange {
+  color: #f5a623;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 40px;
+  padding-bottom: 14px;
+}
+.price-box__lead {
+  line-height: 27px;
+  padding-bottom: 50px;
+}
+.price-box__body {
+  border: 0.5px solid #1b224c;
+  border-top: 0;
+  height: 414px;
+  padding: 15px;
+}
+.price-box__body:last-child {
+  margin-bottom: 0;
+}
+.price-box__feature:last-child {
+  margin-bottom: 0;
+}
+.price-box__feature-text {
+  margin-bottom: 20px;
+  padding-left: 30px;
+  position: relative;
+}
+.price-box__feature-text::before {
+  -webkit-transform: rotate(50deg);
+  border-bottom: 3px solid #1b224c;
+  border-right: 3px solid #1b224c;
+  content: "";
+  height: 13px;
+  left: 7px;
+  position: absolute;
+  top: 0.1em;
+  transform: rotate(50deg);
+  width: 8px;
 }
 /*# sourceMappingURL=sourcemaps/style.css.map */

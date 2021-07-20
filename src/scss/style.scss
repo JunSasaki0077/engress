@@ -6,9 +6,12 @@
 
 @import "./module/header";
 @import "./module/gnav";
+@import "./module/content";
 @import "./module/footer";
+@import "./module/top";
 @import "./module/fnav";
 @import "./module/contact";
+@import "./module/breadcrumb";
 
 @import "./page/top/fv";
 @import "./page/top/about";
@@ -17,3 +20,6 @@
 @import "./page/top/flow";
 @import "./page/top/qanda";
 @import "./page/top/blog-news";
+
+@import "./page/course/system";
+@import "./page/course/price";

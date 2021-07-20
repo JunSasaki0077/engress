@@ -1,0 +1,15 @@
+.top {
+  width: 100%;
+  background-image: url("../images/course/plan.png");
+  background-size: cover;
+  height: 221px;
+  background-repeat: no-repeat;
+  &__title {
+    text-align: center;
+    padding: 5rem;
+    color: $colorWhite;
+    font-size: 32px;
+    line-height: 54px;
+    letter-spacing: 0.25rem;
+  }
+}
