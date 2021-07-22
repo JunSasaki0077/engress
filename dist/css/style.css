@@ -621,7 +621,6 @@ img {
 }
 
 .top {
-  background-image: url("../images/course/plan.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 221px;
@@ -723,10 +722,9 @@ img {
 .breadcrumb__item:last-child::after {
   content: "";
 }
-.breadcrumb__item a {
+.breadcrumb__link {
   color: #000;
   line-height: 32px;
-  text-decoration: none;
   text-decoration: underline;
 }
 
@@ -1172,6 +1170,10 @@ img {
   text-decoration: underline;
 }
 
+.course__top {
+  background-image: url("/images/course/plan.png");
+}
+
 .system__title {
   font-size: 32px;
   line-height: 54px;
@@ -1315,5 +1317,98 @@ img {
   top: 0.1em;
   transform: rotate(50deg);
   width: 8px;
+}
+.blog__top {
+  background-image: url("/images/blog/blog.png");
+}
+.blog__title {
+  font-size: 32px;
+  line-height: 54px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+.blog__badge {
+  position: relative;
+}
+.blog__badge::after {
+  border-style: solid;
+  border-width: 1.5rem 4.75rem 0 0;
+  content: "";
+  position: absolute;
+  z-index: 1;
+}
+.blog__badge-text {
+  color: #fff;
+  font-size: 12px;
+  left: 0.5rem;
+  position: absolute;
+  top: 0.25rem;
+  z-index: 2;
+}
+.blog__item {
+  display: flex;
+  justify-content: space-between;
+}
+.blog__items {
+  padding-bottom: 90px;
+}
+.blog__items:last-child {
+  padding-bottom: 109px;
+}
+.blog__img {
+  height: 179px;
+  width: 240px;
+}
+.blog__date {
+  line-height: 29px;
+  padding-bottom: 20px;
+}
+.blog__text {
+  line-height: 27px;
+}
+.blog__body-title {
+  font-size: 26px;
+  line-height: 39px;
+  padding-bottom: 20px;
+}
+.blog__body-title a {
+  text-decoration: underline;
+}
+
+.pager {
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 45px;
+}
+.pager__inner {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pager__item {
+  margin-right: 15px;
+}
+.pager__item:last-child {
+  margin-right: 0;
+}
+.pager__link {
+  align-items: center;
+  border: 1px solid currentColor;
+  color: #1b224c;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.25s;
+  width: 40px;
+}
+.pager__link:focus, .pager__link:hover {
+  background-color: #1b224c;
+  color: #ffffff;
+  opacity: 0.75;
+}
+.pager__link-active {
+  background-color: #1b224c;
+  color: #ffffff;
 }
 /*# sourceMappingURL=sourcemaps/style.css.map */

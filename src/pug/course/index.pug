@@ -1,15 +1,22 @@
+
 extends ../includes/_layout
 block titles
   - let title = 'Engress'
 
 
 
+
   include ../includes/_header
 
-  section.top
+  section.course__top.top
     h1.top__title コース・料金
 
-  include ../includes/_breadcrumb
+  include ../mixin/_breadcrumb
+  nav.breadcrumb
+    +breadcrumb([
+      ["ホーム", "/"],
+      ["料金体系", "/course/"]
+      ])
 
   .content
     section.system

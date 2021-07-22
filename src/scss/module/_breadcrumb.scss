@@ -20,11 +20,10 @@
     &:last-child::after {
       content: "";
     }
-    a {
-      text-decoration: none;
-      color: #000;
-      line-height: 32px;
-      text-decoration: underline;
-    }
+  }
+  &__link {
+    color: #000;
+    line-height: 32px;
+    text-decoration: underline;
   }
 }

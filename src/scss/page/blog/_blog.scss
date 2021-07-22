@@ -1,0 +1,58 @@
+.blog {
+  &__top {
+    background-image: url("/images/blog/blog.png");
+  }
+  &__title {
+    font-size: 32px;
+    line-height: 54px;
+    text-align: center;
+    padding-bottom: 60px;
+  }
+  &__badge {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      border-width: 1.5rem 4.75rem 0 0;
+      border-style: solid;
+    }
+    &-text {
+      position: absolute;
+      z-index: 2;
+      top: 0.25rem;
+      left: 0.5rem;
+      color: #fff;
+      font-size: 12px;
+    }
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__items {
+    padding-bottom: 90px;
+    &:last-child {
+      padding-bottom: 109px;
+    }
+  }
+  &__img {
+    width: 240px;
+    height: 179px;
+  }
+  &__date {
+    line-height: 29px;
+    padding-bottom: 20px;
+  }
+  &__text {
+    line-height: 27px;
+  }
+  &__body-title {
+    font-size: 26px;
+    line-height: 39px;
+    padding-bottom: 20px;
+    a {
+      text-decoration: underline;
+    }
+  }
+}
