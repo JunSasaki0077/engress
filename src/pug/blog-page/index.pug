@@ -1,0 +1,100 @@
+extends ../includes/_layout
+block titles
+  - let title = 'Engress'
+
+
+
+  include ../includes/_header
+
+  include ../mixin/_breadCrumb
+  nav.breadcrumb
+    +breadcrumb([
+      ["ホーム", "/"],
+      ["ブログ", "/blog/"]
+    ])
+
+  .content.blog-page
+    section
+      .blog-page__head-badge
+            span.blog-page__badge-text カテゴリ１
+      h1.blog-page__title01 ブログタイトルテキストテキストテキストテキスト
+      figure.blog-page__img-wrapper
+        img.blog-page__img(src="../images/blog/sample01.png", alt="ブログ画像０１")
+      h2.blog-page__title02 見出しh2
+      p.blog-page__text 親譲りの無鉄砲で子供の時から損ばかりしている。小学校に居る時分学校の二階か<br/>
+        | ら飛び降りて一週間ほど腰を抜かしたことがある。
+      h3.blog-page__title03 見出しh3
+      p.blog-page__text 本文テキストテキストテキストテキストテキストテキストテキストテキストテキ<br/>
+        | ストテキストテキストテキストテキストテキスト
+      blockquote.blog-page__lead-box
+        p.blog-page__lead-logo “
+        p.blog-page__lead 引用文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+      figure.blog-page__img-wrapper
+        img.blog-page__img(src="../images/page/sample.png", alt="サンプル画像")
+      ul.blog-page__list
+        li.blog-page__item リストリストリストリストリストリストリストリストリスト
+        li.blog-page__item リストリストリストリストリストリストリストリストリストリストリスト
+        li.blog-page__item リストリストリストリストリストリストリストリストリストリストリストリスト
+      a.blog-page__link(href="#") テキストリンクテキストリンク
+
+      h2.blog-page__recommend おすすめの記事
+      .blog-page__items
+        .blog-page__recommend-badge
+          span.blog-page__recommend-badge-text カテゴリ１
+        .blog-page__body
+          figure.blog-page__img-wrapper
+            img.blog-page__recommend-img(src="../images/top/sample01.png", alt="ブログ画像01")
+          .blog-page__blog-box
+            p.blog-page__recommend-date 0000-00-00
+            a.blog-page__recommend-link(href="#") ブログタイトルテキストテキストテキストテキストテキスト
+        .blog-page__recommend-badge
+          span.blog-page__recommend-badge-text カテゴリ２
+        .blog-page__body
+          figure.blog-page__img-wrapper
+            img.blog-page__recommend-img(src="../images/top/sample02.png", alt="ブログ画像02")
+          .blog-page__blog-box
+            p.blog-page__recommend-date 0000-00-00
+            a.blog-page__recommend-link(href="#") ブログタイトルテキストテキストテキストテキストテキスト
+        .blog-page__recommend-badge
+          span.blog-page__recommend-badge-text カテゴリ３
+        .blog-page__body
+          figure.blog-page__img-wrapper
+            img.blog-page__recommend-img(src="../images/top/sample03.png", alt="ブログ画像03")
+          .blog-page__blog-box
+            p.blog-page__recommend-date 0000-00-00
+            a.blog-page__recommend-link(href="#") ブログタイトルテキストテキストテキストテキストテキスト
+
+    section.sidebar
+      .sidebar__badge
+        span.sidebar__badge-text 関連記事
+      .sidebar__box
+        figure.sidebar__imb-wrapper
+          img.sidebar__img(src="../images/top/sample01.png", alt="サンプル０１")
+        a.sidebar__link ブログタイトルテキストテキストテキストテキストテキスト
+      .sidebar__box
+        figure.sidebar__imb-wrapper
+          img.sidebar__img(src="../images/top/sample02.png", alt="サンプル０２")
+        a.sidebar__link ブログタイトルテキストテキストテキストテキストテキスト
+      .sidebar__box
+        figure.sidebar__imb-wrapper
+          img.sidebar__img(src="../images/top/sample03.png", alt="サンプル０３")
+        a.sidebar__link ブログタイトルテキストテキストテキストテキストテキスト
+      .sidebar__badge
+        span.sidebar__badge-text カテゴリー
+      ul.sidebar__list
+        li.sidebar__item
+          a(href="#") カテゴリー１
+        li.sidebar__item
+          a(href="#") カテゴリー２
+        li.sidebar__item
+          a(href="#") カテゴリー３
+
+
+
+
+
+
+
+
+  include ../includes/_contact
+  include ../includes/_footer

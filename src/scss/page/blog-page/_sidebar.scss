@@ -1,0 +1,55 @@
+.sidebar {
+  &__badge {
+    height: 63px;
+    width: 269px;
+    background-color: $colorBlue;
+    text-align: center;
+    padding-top: 14px;
+    margin-bottom: 30px;
+    &-text {
+      color: $colorWhite;
+      font-weight: bold;
+      font-size: 21px;
+      line-height: 39px;
+    }
+  }
+  &__box {
+    display: flex;
+    padding-bottom: 40px;
+    &:nth-last-child(1) {
+      margin-bottom: 49px;
+    }
+  }
+
+  &__img {
+    width: 100px;
+    height: 70px;
+    margin-right: 17px;
+  }
+  &__link {
+    font-size: 12px;
+    line-height: 24px;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  &__item {
+    position: relative;
+    padding-left: 21px;
+    margin-bottom: 10px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 0;
+      display: block;
+      width: 4px;
+      height: 4px;
+      background-color: $colorBlue;
+      border-radius: 50%;
+    }
+
+    a {
+      font-weight: bold;
+    }
+  }
+}
