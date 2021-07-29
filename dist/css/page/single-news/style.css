@@ -1,0 +1,26 @@
+.single-news__title {
+  font-size: 28px;
+  line-height: 48px;
+  padding-bottom: 36px;
+}
+.single-news__title02 {
+  font-size: 26px;
+  line-height: 39px;
+  padding-bottom: 30px;
+}
+.single-news__title03 {
+  border-left: 4px solid;
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 27px;
+  padding-left: 10px;
+}
+.single-news__date {
+  padding-bottom: 60px;
+  text-align: right;
+}
+.single-news__text {
+  line-height: 24px;
+  padding-bottom: 30px;
+}
+/*# sourceMappingURL=../../sourcemaps/page/single-news/style.css.map */

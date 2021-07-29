@@ -1,0 +1,40 @@
+extends ../includes/_layout
+block titles
+  - let title = 'Engress'
+
+
+
+  include ../includes/_header
+
+  include ../mixin/_breadCrumb
+  nav.breadcrumb
+    +breadcrumb([
+      ["ホーム", "/"],
+      ["お知らせ", "/news/"]
+    ])
+
+  .content
+    sention.single-news
+      .single-news__head
+        h1.single-news__title お知らせのタイトルテキストテキストテキストテキスト
+        p.single-news__date 2020-10-01
+      h2.single-news__title02 見出し１
+      p.single-news__text 本文テキストテキストテキストテキストテキストテキスト
+      h3.single-news__title03 見出し２
+      p.single-news__text 本文テキストテキストテキストテキストテキストテキスト
+      blockquote.single-news__lead-box
+        p.single-news__lead-logo “
+        p.single-news__lead 引用テキストテキストテキストテキストテキストテキストテキスト
+      figure.single-news__img-wrapper
+        img.single-news__img(src="../images/page/sample.png", alt="サンプル画像")
+      ul.single-news__list
+        li.single-news__item リストリストリストリストリストリストリストリストリスト
+        li.single-news__item リストリストリストリストリストリストリストリストリストリストリスト
+        li.single-news__item リストリストリストリストリストリストリストリストリストリストリストリスト
+      a.single-news__link(href="#") テキストリンクテキストリンク
+
+
+
+
+  include ../includes/_contact
+  include ../includes/_footer

@@ -1,0 +1,22 @@
+extends ../includes/_layout
+block titles
+  - let title = 'Engress'
+
+
+
+  include ../includes/_header
+
+  include ../mixin/_breadCrumb
+  nav.breadcrumb
+    +breadcrumb([
+      ["ホーム", "/"],
+      ["送信完了", "#"]
+    ])
+
+  section.complate
+    p.complate__text お問い合わせいただきありがとうございます
+      span 内容を確認した後、担当よりご連絡いたします。
+    a.complate__link(href="/")  ホームへ戻る
+
+  include ../includes/_contact
+  include ../includes/_footer

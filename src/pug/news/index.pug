@@ -1,0 +1,35 @@
+extends ../includes/_layout
+block titles
+  - let title = 'Engress'
+
+
+
+  include ../includes/_header
+
+  section.news__top.top
+    h1.top__title お知らせ
+
+  include ../mixin/_breadCrumb
+  nav.breadcrumb
+    +breadcrumb([
+      ["ホーム", "/"],
+      ["お知らせ", "/news/"]
+    ])
+
+  section.news.content
+    h2.news__title  お知らせ一覧
+    ul.news__list
+      li.news__item
+        p.news__date 2020-12-30
+        a.news__link お知らせのタイトルテキストテキストテキストテキスト
+      li.news__item
+        p.news__date 2020-12-20
+        a.news__link お知らせのタイトルテキストテキストテキストテキスト
+
+
+  include ../includes/_pager
+
+
+
+  include ../includes/_contact
+  include ../includes/_footer

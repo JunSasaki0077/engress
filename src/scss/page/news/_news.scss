@@ -1,0 +1,33 @@
+.news {
+  &__top {
+    background-image: url("/images/news/news.png");
+  }
+  &__title {
+    font-size: 32px;
+    line-height: 54px;
+    padding-bottom: 60px;
+    text-align: center;
+  }
+
+  &__list {
+    border-top: 1px solid $colorGray;
+    border-bottom: 1px solid $colorGray;
+    &:last-child {
+      border-bottom: none;
+    }
+    margin-bottom: 60px;
+  }
+  &__item {
+    display: flex;
+    line-height: 24px;
+    border-bottom: 1px solid $colorGray;
+    padding-top: 23.5px;
+    padding-bottom: 24.5px;
+  }
+  &__date {
+    padding-right: 51px;
+  }
+  &__link {
+    text-decoration: underline;
+  }
+}
