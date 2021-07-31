@@ -1,0 +1,68 @@
+extends ../includes/_layout
+block titles
+  - let title = 'Engress'
+
+
+
+  include ../includes/_header
+
+  section.contact__top.top
+    h1.top__title お問い合わせ・資料請求
+
+  include ../mixin/_breadCrumb
+  nav.breadcrumb
+    +breadcrumb([
+      ["ホーム", "/"],
+      ["お問い合わせ", "#"]
+    ])
+
+  section.contact
+    p.contact__head 弊社に興味を持って頂きありがとうございます。商談やサービスのご利用、資料請求について下記<br/>
+      |  のフォームよりお問い合わせください。
+    form(method="post").contact__form
+      p.contact__text 会社
+      p.contact__date
+        input(type="text" name="company" placeholder="Engress")
+      p.contact__text 氏名
+      p.contact__date
+        input(type="text" name="name" placeholder ="田中 太郎")
+      p.contact__text メールアドレス
+      p.contact__date
+        input(type="text" name="email" placeholder ="example@example.com")
+      p.contact__text 電話番号
+      p.contact__date
+        input(type="text" name="tel" placeholder ="01-234506789")
+      p.contact__select-text お問い合わせの種類を選択してください(
+        span 資料請求の方は資料請求を選択してください
+        | )
+      p.contact__select
+        input(type="radio" name ="type" value ="consultation")
+        label 商談のご相談
+      p.contact__select
+        input(type="radio" name ="type" value ="service")
+        label サービスに関するお問い合わせ
+      p.contact__select
+        input(type="radio" name ="type" value ="document")
+        label 資料請求
+      p.contact__select
+        input(type="radio" name ="type" value ="other")
+        label その他
+      p.contact__text お問い合わせ内容
+      p.contact__date
+        textarea(name="contact", placeholder="入力してください")
+      .contact__text-box
+        a.contact__privasy(href="#")
+          span プライバシーポリシー
+          | に同意の上、送信ください。
+        p.contact__check
+          input(type="checkbox" name="privasy")
+          label プライバシーポリシーに同意する
+        button.contact__btn
+          a(href="#") 送信する
+
+
+
+
+
+  include ../includes/_document
+  include ../includes/_footer

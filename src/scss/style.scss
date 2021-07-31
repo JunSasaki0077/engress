@@ -10,7 +10,7 @@
 @import "./module/footer";
 @import "./module/top";
 @import "./module/fnav";
-@import "./module/contact";
+@import "./module/document";
 @import "./module/breadcrumb";
 
 @import "./page/top/fv";
@@ -36,3 +36,5 @@
 @import "./page/single-news/single-page";
 
 @import "./page/page-complate/complate";
+
+@import "./page/contact/contact.scss";

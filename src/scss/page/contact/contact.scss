@@ -1,0 +1,96 @@
+@import "../../setting/config";
+
+.contact {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-top: 58px;
+  padding-bottom: 82px;
+
+  &__top {
+    background-image: url("/images/contact/cta.png");
+  }
+
+  &__text {
+    line-height: 27px;
+  }
+  &__select-text {
+    padding-bottom: 21px;
+    span {
+      font-weight: bold;
+    }
+  }
+  &__head {
+    padding-bottom: 41px;
+    line-height: 27px;
+  }
+  &__date {
+    border: 0.5px solid;
+    margin-bottom: 20px;
+    margin-top: 12px;
+    width: 700px;
+    input {
+      height: 50px;
+      padding-left: 20px;
+      font-size: 12px;
+      line-height: 20px;
+      &::placeholder {
+        color: #b4b4b4;
+      }
+    }
+    textarea {
+      padding-top: 22px;
+      padding-left: 23px;
+      height: 240px;
+      &::placeholder {
+        color: #b4b4b4;
+      }
+    }
+    &:last-of-type {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__select {
+    padding-bottom: 17px;
+    input {
+      width: 20px;
+      height: 20px;
+      color: #707070;
+    }
+    label {
+      padding-left: 19px;
+    }
+  }
+  &__text-box {
+    text-align: center;
+  }
+  &__privasy {
+    padding-bottom: 33px;
+    span {
+      color: $colorOrange;
+      text-decoration: underline;
+    }
+  }
+  &__check {
+    padding-top: 33px;
+    padding-bottom: 48px;
+    display: flex;
+    justify-content: center;
+    input {
+      width: 20px;
+      height: 20px;
+      color: #707070;
+    }
+    label {
+      display: block;
+      padding-left: 15px;
+    }
+  }
+  &__btn {
+    background-color: $colorBlue;
+    color: $colorWhite;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+  }
+}

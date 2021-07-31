@@ -650,7 +650,7 @@ img {
   border-right: none;
 }
 
-.contact__box {
+.document__box {
   background-image: url("../images/top/cta.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -659,12 +659,12 @@ img {
   padding-top: 70px;
   text-align: center;
 }
-.contact__title {
+.document__title {
   font-size: 32px;
   line-height: 54px;
   padding-bottom: 16px;
 }
-.contact__btn {
+.document__btn {
   background-color: #f5a623;
   border-radius: 31px;
   color: #fff;
@@ -672,30 +672,30 @@ img {
   margin-bottom: 22px;
   width: 260px;
 }
-.contact__link {
+.document__link {
   font-weight: bold;
   line-height: 27px;
 }
-.contact__contact {
+.document__contact {
   line-height: 27px;
   text-decoration: underline;
 }
-.contact__text-box {
+.document__text-box {
   align-items: center;
   display: flex;
   height: 80px;
   margin-left: 20%;
 }
-.contact__text {
+.document__text {
   font-weight: bold;
   line-height: 27px;
 }
-.contact__tel {
+.document__tel {
   font-size: 36px;
   line-height: 50px;
   padding: 0 20px;
 }
-.contact__time {
+.document__time {
   line-height: 27px;
 }
 
@@ -1727,5 +1727,121 @@ img {
   display: block;
   text-align: center;
   text-decoration: underline;
+}
+
+.contact {
+  margin: 0 auto;
+  max-width: 700px;
+  padding-bottom: 82px;
+  padding-top: 58px;
+}
+.contact__top {
+  background-image: url("/images/contact/cta.png");
+}
+.contact__text {
+  line-height: 27px;
+}
+.contact__select-text {
+  padding-bottom: 21px;
+}
+.contact__select-text span {
+  font-weight: bold;
+}
+.contact__head {
+  line-height: 27px;
+  padding-bottom: 41px;
+}
+.contact__date {
+  border: 0.5px solid;
+  margin-bottom: 20px;
+  margin-top: 12px;
+  width: 700px;
+}
+.contact__date input {
+  font-size: 12px;
+  height: 50px;
+  line-height: 20px;
+  padding-left: 20px;
+}
+.contact__date input::-webkit-input-placeholder {
+  color: #b4b4b4;
+}
+.contact__date input::-moz-placeholder {
+  color: #b4b4b4;
+}
+.contact__date input:-ms-input-placeholder {
+  color: #b4b4b4;
+}
+.contact__date input::-ms-input-placeholder {
+  color: #b4b4b4;
+}
+.contact__date input::placeholder {
+  color: #b4b4b4;
+}
+.contact__date textarea {
+  height: 240px;
+  padding-left: 23px;
+  padding-top: 22px;
+}
+.contact__date textarea::-webkit-input-placeholder {
+  color: #b4b4b4;
+}
+.contact__date textarea::-moz-placeholder {
+  color: #b4b4b4;
+}
+.contact__date textarea:-ms-input-placeholder {
+  color: #b4b4b4;
+}
+.contact__date textarea::-ms-input-placeholder {
+  color: #b4b4b4;
+}
+.contact__date textarea::placeholder {
+  color: #b4b4b4;
+}
+.contact__date:last-of-type {
+  margin-bottom: 30px;
+}
+.contact__select {
+  padding-bottom: 17px;
+}
+.contact__select input {
+  color: #707070;
+  height: 20px;
+  width: 20px;
+}
+.contact__select label {
+  padding-left: 19px;
+}
+.contact__text-box {
+  text-align: center;
+}
+.contact__privasy {
+  padding-bottom: 33px;
+}
+.contact__privasy span {
+  color: #f5a623;
+  text-decoration: underline;
+}
+.contact__check {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 48px;
+  padding-top: 33px;
+}
+.contact__check input {
+  color: #707070;
+  height: 20px;
+  width: 20px;
+}
+.contact__check label {
+  display: block;
+  padding-left: 15px;
+}
+.contact__btn {
+  background-color: #1b224c;
+  border-radius: 5px;
+  color: #ffffff;
+  height: 50px;
+  width: 200px;
 }
 /*# sourceMappingURL=sourcemaps/style.css.map */
